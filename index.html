@@ -15,6 +15,152 @@
 
     <title>Portfolio | Ludiflex</title>
 </head>
+<style>
+    /* -------------- CONTACT SECTION STYLES ---------------- */
+
+/* Top Header (using existing styles) */
+.top-header {
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.top-header span {
+    color: #777;
+    font-size: 15px;
+}
+
+/* Contact Section Layout */
+.row {
+    display: flex;
+    gap: 2rem;
+    padding: 20px;
+    margin-inline: auto;
+    max-width: 1200px;
+}
+
+.col {
+    flex: 1;
+}
+
+/* Contact Info Styles */
+.contact-info {
+    background: var(--color-white);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+    height: 100%;
+}
+
+.contact-info h2 {
+    color: var(--text-color-second);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    color: #777;
+    font-size: 15px;
+}
+
+.contact-info i {
+    font-size: 1.2rem;
+    color: var(--first-color);
+}
+
+/* Form Controls */
+.form-control {
+    background: var(--color-white);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+}
+
+.form-inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.input-field {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+    border-color: var(--first-color);
+    outline: none;
+}
+
+.text-area {
+    margin-bottom: 1rem;
+}
+
+.text-area textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    height: 150px;
+    resize: none;
+    font-size: 15px;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+}
+
+.text-area textarea:focus {
+    border-color: var(--first-color);
+    outline: none;
+}
+
+.form-button {
+    text-align: right;
+}
+
+.btn {
+    background: var(--first-color);
+    color: var(--color-white);
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: var(--first-color-hover);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .form-inputs {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        margin-bottom: 2rem;
+    }
+}
+</style>
 <body>
    <div class="container">
     <!-- --------------- HEADER --------------- -->
@@ -44,7 +190,9 @@
             </ul>
         </div>
         <div class="nav-button">
-            <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+            <button class="btn"
+            onclick="window.open('./assets/pdf/ER-RAJY NOUREDDINE.pdf')">
+            Download CV <i class="uil uil-file-alt"></i></button>
         </div>
         <div class="nav-menu-btn">
             <i class="uil uil-bars" onclick="myMenuFunction()"></i>
@@ -70,7 +218,8 @@
             </div>
             <div class="featured-text-btn">
                 <button class="btn blue-btn">Hire Me</button>
-                <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+                <button class="btn"
+                onclick="window.open('./assets/pdf/ER-RAJY NOUREDDINE.pdf')">Download CV <i class="uil uil-file-alt"></i></button>
             </div>
             <div class="social_icons">
                 <div class="icon"><i class="uil uil-instagram"></i></div>
@@ -100,15 +249,16 @@
           <div class="row">
             <div class="col">
                 <div class="about-info">
-                    <h3>My introduction</h3>
+                    <h3>My introduction</h3><br>
                     <p>As a passionate Full Stack Developer, I create intuitive and high-performing web
                          applications using Java, Angular, and Spring Boot. With a focus on user-friendly 
                          and efficient interfaces, I strive to deliver optimal user
                          experiences while continually learning and exploring new development techniques.
 
                     </p>
-                    <div class="about-btn">
-                        <button class="btn">Download CV <i class="uil uil-import"></i></button>
+                    <div class="about-btn"><br>
+                        <button class="btn"
+                        onclick="window.open('./assets/pdf/ER-RAJY NOUREDDINE.pdf')">Download CV <i class="uil uil-file-alt"></i></button>
                     </div>
                 </div>
             </div>
@@ -134,7 +284,7 @@
                         <span>PHP</span>
                         <span>JEE</span>
                         <span>SPRIN BOOT</span>
-                    </div>
+                    </div>   
                 </div>
                 <div class="skills-box">
                     <div class="skills-header">
@@ -146,6 +296,39 @@
                         <span>MongoDB</span>
                     </div>
                 </div>
+
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>DevOps</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>Docker</span>
+                        <span>Jenkins</span>
+                        <span>SonarQube</span>
+                        <span>Qodana</span>
+                        <span>mockito</span>
+                        <span>Juint</span>
+                    </div>
+                </div>
+
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Outils</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>Git</span>
+                        <span>Github</span>
+                        <span>Jira</span>
+                        <span>Star UML</span>
+                        <span>Figma</span>
+                        <span>IntelliJ IDEA</span>
+                        <span>Vs code</span>
+
+                    </div>
+                </div>
+                
+                
+                
             </div>
           </div>
        </section>
@@ -275,7 +458,7 @@
     <!-- --------------- FOOTER --------------- -->
     <footer>
         <div class="top-footer">
-            <p>John Doe .</p>
+            <p>ER-RAJY NOUREDDINE .</p>
         </div>
         <div class="middle-footer">
             <ul class="footer-menu">

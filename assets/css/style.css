@@ -655,7 +655,7 @@ footer{
 
 /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
 @media only screen and (max-width: 1024px){
-    .featured-text{
+    .featured-text{	
         padding: 0;
     }
     .image, .image img{
