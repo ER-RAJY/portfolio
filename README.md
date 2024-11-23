@@ -12,8 +12,5 @@ Welcome to my personal portfolio website! This project showcases my work, skills
 - **CSS**: Styling and layout.
 - **JavaScript**: Adding interactivity.
 
----
 
-## 📂 Project Structure
-Here's an overview of the project's structure:
 
