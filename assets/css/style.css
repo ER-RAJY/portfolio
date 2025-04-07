@@ -456,6 +456,10 @@ nav{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     padding: 0 1rem;
+    
+}
+.blogs-container a{
+    text-decoration: none;
 }
 
 .blog-card {
